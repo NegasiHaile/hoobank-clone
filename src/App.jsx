@@ -1,16 +1,14 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/hoobank.svg";
-import "./style.js";
+import styles from "./style";
+import { Navbar } from "./components";
 
-function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <h1>Vite + React + TailwindCSS</h1>
+const App = () => (
+  <div className="bg-primary w-full overflow-hidden">
+    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Navbar />
+      </div>
     </div>
-  );
-}
+  </div>
+);
 
 export default App;
